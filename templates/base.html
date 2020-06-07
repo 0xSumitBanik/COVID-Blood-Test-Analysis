@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 </title>
+  <link rel="icon" href="/static/img/icon.png" sizes="16x16" type="image/png">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<header class="text-gray-700  body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+    <a href="/" class="flex title-font font-medium items-center 0 text-gray-900 mb-4 md:mb-0">
+      <img src="https://img.icons8.com/officel/26/000000/coronavirus.png" />
+      <span class="ml-3 text-xl">COVID-19</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap  bg-green-400 items-center text-base justify-center">
+    </nav>
+    <a href="/blood-test">
+      <button
+      class="inline-flex items-center bg-gray-200 
+      border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded 
+      text-base mt-4 md:mt-0">Blood Test Analysis
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+    </a>
+    
+  </div>
+</header>
+<style type="text/css">
+  li {
+    cursor: pointer;
+  }
+
+  /* body{
+        font-family: 'Raleway', sans-serif;
+    } */
+</style>
+
+<body>
+
+  {% block content %}
+
+  {% endblock %}
+  <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+  <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>

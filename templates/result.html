@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% static "images" as baseUrl %}
+
+{% block content %}
+<style>
+.form_result{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+<body>
+  <div class="container content-center mx-auto flex p-5 md:flex-row form_result">
+    <span style="font-size: 20px;">COVID19 Probability: {{result}}%</span>
+  </div>
+
+</body>
+
+
+{% endblock %}
